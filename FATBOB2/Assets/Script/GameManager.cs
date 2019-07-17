@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public CoinSpawner CSpawner;
     public BubbleTeaSpawner BSpawner;
     public DoughnutSpawner DSpawner;
-    public PizzaSpawner PSpawner;
+    public PizzaSpawner PiSpawner;
 
     public Animator animator;
     public StaminaSystem myStamina;
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
             DSpawner.ShouldSpawn = false;
 
         Pizza.Speed = 0;
-        PSpawner.ShouldSpawn = false;
+        PiSpawner.ShouldSpawn = false;
 
         myStamina.STAMINALOSS = 0;
             background.scroll_speed = 0;
