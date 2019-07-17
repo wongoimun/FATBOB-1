@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public CoinSpawner CSpawner;
     public BubbleTeaSpawner BSpawner;
     public DoughnutSpawner DSpawner;
+    public PizzaSpawner PSpawner;
 
     public Animator animator;
     public StaminaSystem myStamina;
@@ -57,7 +58,10 @@ public class GameManager : MonoBehaviour
             Doughnut.Speed = 0;
             DSpawner.ShouldSpawn = false;
 
-            myStamina.STAMINALOSS = 0;
+        Pizza.Speed = 0;
+        PSpawner.ShouldSpawn = false;
+
+        myStamina.STAMINALOSS = 0;
             background.scroll_speed = 0;
             animator.SetBool("Dead", true);
 
