@@ -400,6 +400,7 @@ MonoBehaviour:
   WaitTime: 1
   Coin: {fileID: 9018887001936250162, guid: b04cae3326a7f93439773d2f6c7d8de4, type: 3}
   ShouldSpawn: 1
+  paperSpawner: {fileID: 559423287}
 --- !u!4 &157578909
 Transform:
   m_ObjectHideFlags: 0
