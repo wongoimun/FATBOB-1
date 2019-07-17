@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 564650695ad92d245a41c0f234eaca8c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EvilPaperObstacle: {fileID: 1990534614181272011, guid: 8666cd20a9bd6e8488ebab97a77ab256,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
