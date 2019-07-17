@@ -57,13 +57,13 @@ public class GameManager : MonoBehaviour
             Doughnut.Speed = 0;
             DSpawner.ShouldSpawn = false;
 
-        myStamina.STAMINALOSS = 0;
+            myStamina.STAMINALOSS = 0;
             background.scroll_speed = 0;
             animator.SetBool("Dead", true);
 
-        Debug.Log("GAME OVER");
 
         //BGSoundScript.Instance.gameObject.GetComponent<AudioSource>().pause();
     }
+
 
 }
