@@ -27,7 +27,5 @@ public class AngryPhoneObstacle : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("destroyed");
         }
-       //testing
-
     }
 }
