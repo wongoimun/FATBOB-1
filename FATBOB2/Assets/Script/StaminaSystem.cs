@@ -43,7 +43,7 @@ public class StaminaSystem : MonoBehaviour
 
         if (Doughnut.hitDoughnut)
         {
-            float toIncrease = 0.30f * MAXSTAMINA;
+            float toIncrease = 0.40f * MAXSTAMINA;
             if (100 - MAXSTAMINA <= toIncrease)
             {
                 MAXSTAMINA = 100;
@@ -53,6 +53,20 @@ public class StaminaSystem : MonoBehaviour
                 MAXSTAMINA += toIncrease;
             }
             Doughnut.hitDoughnut = false;
+        }
+
+        if (Pizza.hitPizza)
+        {
+            float toIncrease = 0.60f * MAXSTAMINA;
+            if (100 - MAXSTAMINA <= toIncrease)
+            {
+                MAXSTAMINA = 100;
+            }
+            if (100 - MAXSTAMINA > toIncrease)
+            {
+                MAXSTAMINA += toIncrease;
+            }
+            Pizza.hitPizza = false;
         }
     }
 }

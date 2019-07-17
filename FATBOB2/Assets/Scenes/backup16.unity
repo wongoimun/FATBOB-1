@@ -226,7 +226,7 @@ Transform:
   m_LocalScale: {x: 2.89, y: 3.85, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &99761791
 GameObject:
@@ -593,7 +593,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &559423289
 SpriteRenderer:
@@ -673,8 +673,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582649017}
+  - component: {fileID: 582649018}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PizzaSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,8 +693,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582649018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582649016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1faff97a03ef3184da36556d7dc52d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitTime: 53
+  Pizza: {fileID: 2422001874627219202, guid: fffeb92ef607492498bc1e8e6ca9aafa, type: 3}
+  ShouldSpawn: 1
 --- !u!1 &608149949
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77cb5a4a8e25a0d4ab387605621d74fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitTime: 23
+  WaitTime: 32
   Doughnut: {fileID: 2214293113566447150, guid: 910cfdd016d92bd44a21fbb86c0ee5a8,
     type: 3}
   ShouldSpawn: 1
@@ -968,7 +984,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647449548
 GameObject:
@@ -1047,7 +1063,7 @@ Transform:
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676981338
 GameObject:
@@ -1078,7 +1094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff576c07f146ca44be1f740f5fa578b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitTime: 15
+  WaitTime: 20
   BubbleTea: {fileID: 7487930052481879020, guid: 824afd55bd2fd8243a9ff91060603f36,
     type: 3}
   ShouldSpawn: 1
@@ -2083,7 +2099,7 @@ Transform:
   m_LocalScale: {x: 0.011441119, y: 0.009943354, z: 0.052371178}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2110175825
 MonoBehaviour:
