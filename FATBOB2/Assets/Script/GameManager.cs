@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public Text BestScore;
     private bool hasGameEnded = false;
 
-    public float restartDelay = 1f;
+    public float restartDelay = 100f;
     
 
     [SerializeField]
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         {
             hasGameEnded = true;
             Debug.Log("GAME OVER");
-            Invoke("Restart", restartDelay);
+            //Invoke("Restart", restartDelay);
             gameOverUI.SetActive(true);
         }
     }
