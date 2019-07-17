@@ -87,11 +87,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Restart()
+   /* void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-    }
+    }*/
 
     
 
