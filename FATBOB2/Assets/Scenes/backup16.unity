@@ -967,11 +967,13 @@ MonoBehaviour:
   CSpawner: {fileID: 157578908}
   BSpawner: {fileID: 676981339}
   DSpawner: {fileID: 632970285}
+  PiSpawner: {fileID: 582649018}
   animator: {fileID: 2110175826}
   myStamina: {fileID: 99761792}
   background: {fileID: 104990041}
   CurrentScore: {fileID: 609872020}
   BestScore: {fileID: 1348365045}
+  restartDelay: 1
 --- !u!4 &646673584
 Transform:
   m_ObjectHideFlags: 0
