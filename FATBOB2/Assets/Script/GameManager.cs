@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public Text BestScore;
     private bool hasGameEnded = false;
 
+
     private void Start()
     {
         BestScore.text = PlayerPrefs.GetInt("HighScore",0).ToString();

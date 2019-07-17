@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BGSoundScript : MonoBehaviour
 {
+    public bool PlayerisDead = false;
     private static BGSoundScript instance = null;
 
     public static BGSoundScript Instance
