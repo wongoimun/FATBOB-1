@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
     public Text CurrentScore;
     public Text BestScore;
     private bool hasGameEnded = false;
+
+    public float restartDelay = 1f;
 
 
     private void Start()
@@ -41,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerHit()
         {
-            hasGameEnded = true;
+            //hasGameEnded = true;
 
             EvilPaperObstacle.Speed = 0;
             Spawner.ShouldSpawn = false;
@@ -67,6 +70,22 @@ public class GameManager : MonoBehaviour
 
 
         //BGSoundScript.Instance.gameObject.GetComponent<AudioSource>().pause();
+    }
+
+    public void EndGame()
+    {
+        if(hasGameEnded == false)
+        {
+            hasGameEnded = true;
+            Debug.Log("GAME OVER");
+            Invoke("Restart", restartDelay);
+        }
+    }
+
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
 
