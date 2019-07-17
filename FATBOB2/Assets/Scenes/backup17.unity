@@ -397,9 +397,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e226a74ed0c0f5647a81b87acb97574e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitTime: 1
+  WaitTime: 0.5
   Coin: {fileID: 9018887001936250162, guid: b04cae3326a7f93439773d2f6c7d8de4, type: 3}
   ShouldSpawn: 1
+  paperSpawner: {fileID: 559423287}
 --- !u!4 &157578909
 Transform:
   m_ObjectHideFlags: 0
