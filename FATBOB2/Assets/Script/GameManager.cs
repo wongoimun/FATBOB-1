@@ -61,6 +61,9 @@ public class GameManager : MonoBehaviour
             background.scroll_speed = 0;
             animator.SetBool("Dead", true);
 
+        Debug.Log("GAME OVER");
+
         //BGSoundScript.Instance.gameObject.GetComponent<AudioSource>().pause();
     }
+
 }
