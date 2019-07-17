@@ -967,7 +967,7 @@ MonoBehaviour:
   CSpawner: {fileID: 157578908}
   BSpawner: {fileID: 676981339}
   DSpawner: {fileID: 632970285}
-  PiSpawner: {fileID: 0}
+  PiSpawner: {fileID: 582649018}
   animator: {fileID: 2110175826}
   myStamina: {fileID: 99761792}
   background: {fileID: 104990041}
@@ -1997,7 +1997,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2026,7 +2026,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
