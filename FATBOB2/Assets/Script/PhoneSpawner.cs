@@ -15,9 +15,13 @@ public class PhoneSpawner : MonoBehaviour
     }
     private IEnumerator SpawnAngryPhoneObstacleAtIntervals()
     {
-        while (ShouldSpawn) //&& (Time.time % Spawner.WaitTime != 0))
+        while (ShouldSpawn)
         {
-            Instantiate(AngryPhoneObstacle, transform.position, Quaternion.identity);
+            if((int)Time.time % Spawner.WaitTime != 0 && (int)Time.time % Spawner.WaitTime != 1)
+            {
+                //Debug.Log(Time.time);
+                Instantiate(AngryPhoneObstacle, transform.position, Quaternion.identity);
+            }
             yield return new WaitForSeconds(WaitTime);
         }
      

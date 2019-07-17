@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetAxis("Jump") == 1 && transform.position.y <= -0.85f)
+        if (Input.GetAxis("Jump") == 1 && transform.position.y <= -0.75f)
         {
             animator.SetBool("Jump", true);
             playerRigidbody.velocity = new Vector2(0.0f, JumpVelocity);
