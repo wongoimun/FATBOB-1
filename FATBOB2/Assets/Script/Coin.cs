@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
     private void Update()
     {
         coinRigidbody.velocity = new Vector2(-1f, 0) * Speed;
-        DoublePickedup = Doughnut.DoublePickedup;
+        //DoublePickedup = Doughnut.DoublePickedup;
         
         /*if (DoublePickedUp)
         {

@@ -15,7 +15,10 @@ public class DoughnutSpawner : MonoBehaviour
     {
         while (ShouldSpawn)
         {
-            Instantiate(Doughnut, transform.position, Quaternion.identity);
+            if (Time.time != 0)
+            {
+                Instantiate(Doughnut, transform.position, Quaternion.identity);
+            }
             yield return new WaitForSeconds(WaitTime);
         }
     }
