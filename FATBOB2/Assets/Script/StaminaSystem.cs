@@ -40,5 +40,19 @@ public class StaminaSystem : MonoBehaviour
             }
             BubbleTea.hitBubbleTea = false;
         }
+
+        if (Doughnut.hitDoughnut)
+        {
+            float toIncrease = 0.30f * MAXSTAMINA;
+            if (100 - MAXSTAMINA <= toIncrease)
+            {
+                MAXSTAMINA = 100;
+            }
+            if (100 - MAXSTAMINA > toIncrease)
+            {
+                MAXSTAMINA += toIncrease;
+            }
+            Doughnut.hitDoughnut = false;
+        }
     }
 }
