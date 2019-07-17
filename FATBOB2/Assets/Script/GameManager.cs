@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     private bool hasGameEnded = false;
 
     public float restartDelay = 1f;
+    
+
+    [SerializeField]
+    private GameObject gameOverUI;
 
 
     private void Start()
@@ -79,6 +83,7 @@ public class GameManager : MonoBehaviour
             hasGameEnded = true;
             Debug.Log("GAME OVER");
             Invoke("Restart", restartDelay);
+            gameOverUI.SetActive(true);
         }
     }
 
@@ -87,6 +92,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
+
+    
 
 
 }
