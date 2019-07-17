@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleTeaSpawner : MonoBehaviour
+public class PizzaSpawner : MonoBehaviour
 {
     public float WaitTime = 0.1f;
-    public GameObject BubbleTea;
+    public GameObject Pizza;
     public bool ShouldSpawn = true;
     private void Start()
     {
-        StartCoroutine(SpawnBubbleTeaAtIntervals());
+        StartCoroutine(SpawnPizzaAtIntervals());
     }
-    private IEnumerator SpawnBubbleTeaAtIntervals()
+    private IEnumerator SpawnPizzaAtIntervals()
     {
         while (ShouldSpawn)
         {
             if (Time.time != 0)
             {
-                Instantiate(BubbleTea, transform.position, Quaternion.identity);
+                Instantiate(Pizza, transform.position, Quaternion.identity);
             }
             yield return new WaitForSeconds(WaitTime);
         }
