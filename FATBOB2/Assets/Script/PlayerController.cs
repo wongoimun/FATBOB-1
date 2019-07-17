@@ -49,12 +49,14 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Ouch!");
             GameManagerInstance.OnPlayerHit();
+            GameManagerInstance.EndGame();
         }
 
         if (other.gameObject.name == "AngryPhoneObstacle(Clone)")
         {
             Debug.Log("Ouch!");
             GameManagerInstance.OnPlayerHit();
+            GameManagerInstance.EndGame();
         }
 
         if (other.gameObject.name == "roadeded")
