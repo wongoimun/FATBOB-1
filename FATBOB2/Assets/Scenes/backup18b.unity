@@ -973,8 +973,7 @@ MonoBehaviour:
   background: {fileID: 104990041}
   CurrentScore: {fileID: 609872020}
   BestScore: {fileID: 1348365045}
-  hasGameEnded: 0
-  restartDelay: 100
+  restartDelay: 1
   gameOverUI: {fileID: 806354806}
 --- !u!4 &646673584
 Transform:
@@ -1378,7 +1377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c073fc9c42f41640ad58a0148cc74b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameM: {fileID: 646673583}
 --- !u!95 &806354813
 Animator:
   serializedVersion: 3

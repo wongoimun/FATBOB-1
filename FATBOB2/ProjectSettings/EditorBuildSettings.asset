@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/backup18.unity
     guid: dc42d2c0dede7c94685e6069bc7f03c0
+  - enabled: 1
+    path: Assets/Scenes/backup18b.unity
+    guid: e2ce82c84f0bf0749a391d222110529b
   m_configObjects: {}

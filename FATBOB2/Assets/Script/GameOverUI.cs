@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
 {
+    public GameManager GameM;
 
     public void Quit()
     {
@@ -14,6 +15,9 @@ public class GameOverUI : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameM.Restart();
+        SceneManager.LoadScene("backup18");
+        
     }
 }

@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     public Text CurrentScore;
     public Text BestScore;
-    private bool hasGameEnded = false;
+    public bool hasGameEnded = false;
 
     public float restartDelay = 100f;
     
@@ -87,11 +87,31 @@ public class GameManager : MonoBehaviour
         }
     }
 
-   /* void Restart()
+   public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        EvilPaperObstacle.Speed = 10f;
+        Spawner.ShouldSpawn = true;
 
-    }*/
+        AngryPhoneObstacle.Speed = 10f;
+        PSpawner.ShouldSpawn = true;
+
+        Coin.Speed = 10f;
+        CSpawner.ShouldSpawn = true;
+
+        BubbleTea.Speed = 10f;
+        BSpawner.ShouldSpawn = true;
+
+        Doughnut.Speed = 10f;
+        DSpawner.ShouldSpawn = true;
+
+        Pizza.Speed = 10f;
+        PiSpawner.ShouldSpawn = true;
+
+        myStamina.STAMINALOSS = 2f;
+        //background.scroll_speed = 0;
+       // animator.SetBool("Dead", true);
+
+    }
 
     
 
