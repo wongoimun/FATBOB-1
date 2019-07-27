@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public BubbleTeaSpawner BSpawner;
     public DoughnutSpawner DSpawner;
     public PizzaSpawner PiSpawner;
+    public MultiplierSpawner MSpawner;
 
     public Animator animator;
     public StaminaSystem myStamina;
@@ -22,7 +23,6 @@ public class GameManager : MonoBehaviour
     public bool hasGameEnded = false;
 
     public float restartDelay = 100f;
-    
 
     [SerializeField]
     private GameObject gameOverUI;
@@ -67,6 +67,9 @@ public class GameManager : MonoBehaviour
 
         Pizza.Speed = 0;
         PiSpawner.ShouldSpawn = false;
+
+        Multiplier.Speed = 0;
+        MSpawner.ShouldSpawn = false;
 
         myStamina.STAMINALOSS = 0;
             background.scroll_speed = 0;

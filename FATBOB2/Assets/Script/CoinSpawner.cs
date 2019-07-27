@@ -19,7 +19,7 @@ public class CoinSpawner : MonoBehaviour
         while (ShouldSpawn)
         {
             int Remainder = (int)(Time.time % paperSpawner.WaitTime);
-            Debug.Log(Remainder);
+            //Debug.Log(Remainder);
             if(Remainder != 1 || Remainder != 4)
             {
                 Instantiate(Coin, transform.position, Quaternion.identity);
