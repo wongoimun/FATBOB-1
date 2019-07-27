@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public GameManager GameManagerInstance;
     public BoxCollider2D collider;
 
+    public SuperStrength SuperStrengthInstance;
 
     private void Start()
     {
@@ -45,14 +46,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.name == "EvilPaperObstacle(Clone)")
+        if (other.gameObject.name == "EvilPaperObstacle(Clone)" && !GameManager.StrengthPickedup)
         {
             Debug.Log("Ouch!");
             GameManagerInstance.OnPlayerHit();
             GameManagerInstance.EndGame();
         }
 
-        if (other.gameObject.name == "AngryPhoneObstacle(Clone)")
+        if (other.gameObject.name == "AngryPhoneObstacle(Clone)" && !GameManager.StrengthPickedup)
         {
             Debug.Log("Ouch!");
             GameManagerInstance.OnPlayerHit();

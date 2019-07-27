@@ -27,7 +27,7 @@ public class Multiplier : MonoBehaviour
             hitMultiplier = true;
             CoinInstance.DoublePickedUp();
             Destroy(gameObject);
-            Debug.Log("pickedUp");
+            //Debug.Log("pickedUp");
         }
     }
 }

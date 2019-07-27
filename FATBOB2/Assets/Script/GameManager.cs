@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
     public DoughnutSpawner DSpawner;
     public PizzaSpawner PiSpawner;
     public MultiplierSpawner MSpawner;
+    public SuperStrengthSpawner SSpawner;
+
+    public static bool StrengthPickedup = false;
+    public static float pickedTiming = 999999999999;
+    public static float endTiming = 999999999999;
 
     public Animator animator;
     public StaminaSystem myStamina;
@@ -44,6 +49,49 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", Coin.score);
         }
 
+
+        //Debug.Log(StrengthPickedup);
+        if (StrengthPickedup && (float)Time.time > endTiming)
+        {
+            StrengthPickedup = false;
+            Normal();
+            //Debug.Log("Strength ended");
+        }
+    }
+
+    public static void Strength()
+    {
+        StrengthPickedup = true;
+        pickedTiming = (float)Time.time;
+        endTiming = pickedTiming + 10;
+        //Debug.Log("picked up " + pickedTiming + " " + endTiming);
+        Speedup();
+    }
+
+    public static void Speedup()
+    {
+        EvilPaperObstacle.Speed = 15;
+        AngryPhoneObstacle.Speed = 15;
+        Coin.Speed = 15;
+        BubbleTea.Speed = 15;
+        Doughnut.Speed = 15;
+        Pizza.Speed = 15;
+        Multiplier.Speed = 15;
+        SuperStrength.Speed = 15;
+        Debug.Log("speed up");
+    }
+
+    public void Normal()
+    {
+        EvilPaperObstacle.Speed = 10;
+        AngryPhoneObstacle.Speed = 10;
+        Coin.Speed = 10;
+        BubbleTea.Speed = 10;
+        Doughnut.Speed = 10;
+        Pizza.Speed = 10;
+        Multiplier.Speed = 10;
+        SuperStrength.Speed = 10;
+        Debug.Log("10");
     }
 
     public void OnPlayerHit()
@@ -70,6 +118,9 @@ public class GameManager : MonoBehaviour
 
         Multiplier.Speed = 0;
         MSpawner.ShouldSpawn = false;
+
+        SuperStrength.Speed = 0;
+        SSpawner.ShouldSpawn = false;
 
         myStamina.STAMINALOSS = 0;
             background.scroll_speed = 0;

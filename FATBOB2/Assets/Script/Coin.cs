@@ -7,9 +7,8 @@ public class Coin : MonoBehaviour
     private Rigidbody2D coinRigidbody;
     public static float Speed = 10f;
     public static int score = 0;
-    public bool DoublePickedup;
-    //public static float CurrCountDownValue;
 
+    public bool DoublePickedup;
     public float pickedTiming = 999999999999;
     public float endTiming;
 
@@ -23,12 +22,6 @@ public class Coin : MonoBehaviour
     private void Update()
     {
         coinRigidbody.velocity = new Vector2(-1f, 0) * Speed;
-        //DoublePickedup = Doughnut.DoublePickedup;
-
-        /*if (DoublePickedUp)
-        {
-            StartCoroutine(StartCountDown());
-        }*/
 
         if ((float)Time.time > pickedTiming && (float)Time.time <= endTiming)
         {
@@ -45,21 +38,6 @@ public class Coin : MonoBehaviour
         pickedTiming = (float)Time.time;
         endTiming = pickedTiming + 5;
     }
-
-    /*public IEnumerator StartCountDown(float countDownValue = 5)
-     {   
-         CurrCountDownValue = 5;
-         yield return new WaitForSeconds(5.0f);
-         Doughnut.hitDoughnut = false;
-         while (CurrCountDownValue > 0)
-         {
-             Debug.Log("Countdown: " + CurrCountDownValue);
-             yield return new WaitForSeconds(1.0f);
-             CurrCountDownValue--;
-             Doughnut.hitDoughnut = false;
-         }
-
-     }*/
 
     private void OnCollisionEnter2D(Collision2D other)
     {
