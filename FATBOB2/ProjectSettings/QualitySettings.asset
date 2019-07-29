@@ -224,3 +224,8 @@ QualitySettings:
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Standalone: 0
+<<<<<<< HEAD
+=======
+    WebGL: 0
+    Windows Store Apps: 0
+>>>>>>> 67cf835f575bc81ad39e7bdeca12f9bf43a7b93e
