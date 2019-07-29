@@ -23,7 +23,7 @@ public class Coin : MonoBehaviour
     {
         coinRigidbody.velocity = new Vector2(-1f, 0) * Speed;
 
-        if ((float)Time.time > pickedTiming && (float)Time.time <= endTiming)
+        if ((float)Time.time > pickedTiming - 1 && (float)Time.time <= endTiming)
         {
             DoublePickedup = true;
         }
