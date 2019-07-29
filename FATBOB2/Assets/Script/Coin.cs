@@ -23,7 +23,7 @@ public class Coin : MonoBehaviour
     {
         coinRigidbody.velocity = new Vector2(-1f, 0) * Speed;
 
-        if ((float)Time.time > pickedTiming - 1 && (float)Time.time <= endTiming)
+        if ((float)Time.time > pickedTiming - 2 && (float)Time.time <= endTiming)
         {
             DoublePickedup = true;
         }
@@ -36,23 +36,23 @@ public class Coin : MonoBehaviour
     
     public void DoublePickedUp()
     {
+        DoublePickedup = true;
         pickedTiming = (float)Time.time;
         endTiming = pickedTiming + 5;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-
-        if (other.gameObject.name == "Bob" && !DoublePickedup)
-        {
-            score++;
-            Destroy(gameObject);
-        }
-
         if (other.gameObject.name == "Bob" && DoublePickedup)
         {
             score += 2;
             //Debug.Log("double");
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.name == "Bob" && !DoublePickedup)
+        {
+            score++;
             Destroy(gameObject);
         }
 
