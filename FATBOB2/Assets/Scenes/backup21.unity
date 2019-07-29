@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1faff97a03ef3184da36556d7dc52d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitTime: 56
+  WaitTime: 57
   Pizza: {fileID: 2422001874627219202, guid: fffeb92ef607492498bc1e8e6ca9aafa, type: 3}
   ShouldSpawn: 1
 --- !u!1 &608149949
