@@ -16,7 +16,7 @@ public class SuperStrengthSpawner : MonoBehaviour
     {
         while (ShouldSpawn)
         {
-            if (Time.time != 0)
+            if (Time.timeSinceLevelLoad != 0)
             {
                 Instantiate(SuperStrength, transform.position, Quaternion.identity);
             }

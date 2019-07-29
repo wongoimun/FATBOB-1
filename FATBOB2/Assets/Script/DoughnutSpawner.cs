@@ -15,7 +15,7 @@ public class DoughnutSpawner : MonoBehaviour
     {
         while (ShouldSpawn)
         {
-            if (Time.time != 0)
+            if (Time.timeSinceLevelLoad != 0)
             {
                 Instantiate(Doughnut, transform.position, Quaternion.identity);
             }

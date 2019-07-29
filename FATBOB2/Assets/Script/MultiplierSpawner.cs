@@ -16,7 +16,7 @@ public class MultiplierSpawner : MonoBehaviour
     {
         while (ShouldSpawn)
         {
-            if (Time.time != 0)
+            if (Time.timeSinceLevelLoad != 0)
             {
                 Instantiate(Multiplier, transform.position, Quaternion.identity);
             }

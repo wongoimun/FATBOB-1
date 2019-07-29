@@ -15,7 +15,7 @@ public class BubbleTeaSpawner : MonoBehaviour
     {
         while (ShouldSpawn)
         {
-            if (Time.time != 0)
+            if (Time.timeSinceLevelLoad != 0)
             {
                 Instantiate(BubbleTea, transform.position, Quaternion.identity);
             }

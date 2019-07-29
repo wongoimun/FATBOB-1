@@ -29,7 +29,7 @@ public class StaminaSystem : MonoBehaviour
 
         if(BubbleTea.hitBubbleTea)
         {
-            float toIncrease = 0.20f * MAXSTAMINA;
+            float toIncrease = 0.30f * MAXSTAMINA;
             if(100 - MAXSTAMINA <= toIncrease)
             {
                 MAXSTAMINA = 100;
@@ -43,7 +43,7 @@ public class StaminaSystem : MonoBehaviour
 
         if (Doughnut.hitDoughnut)
         {
-            float toIncrease = 0.40f * MAXSTAMINA;
+            float toIncrease = 0.50f * MAXSTAMINA;
             if (100 - MAXSTAMINA <= toIncrease)
             {
                 MAXSTAMINA = 100;
@@ -57,7 +57,7 @@ public class StaminaSystem : MonoBehaviour
 
         if (Pizza.hitPizza)
         {
-            float toIncrease = 0.60f * MAXSTAMINA;
+            float toIncrease = 0.65f * MAXSTAMINA;
             if (100 - MAXSTAMINA <= toIncrease)
             {
                 MAXSTAMINA = 100;
