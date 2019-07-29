@@ -5,7 +5,7 @@ using UnityEngine;
 public class SuperStrength : MonoBehaviour
 {
     private Rigidbody2D SuperStrengthRigidbody;
-    public static float Speed = 12f;
+    public static float Speed = 15f;
     public static bool hitSuperStrength = false;
 
     private void Start()

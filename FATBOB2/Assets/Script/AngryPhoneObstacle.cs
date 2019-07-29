@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class AngryPhoneObstacle : MonoBehaviour
 {
-    public static float Speed = 12f;
+    public static float Speed = 15f;
     private Rigidbody2D phoneRigidbody;
     private void Start()
     {

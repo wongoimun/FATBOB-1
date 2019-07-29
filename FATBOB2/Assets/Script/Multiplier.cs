@@ -5,7 +5,7 @@ using UnityEngine;
 public class Multiplier : MonoBehaviour
 {
     private Rigidbody2D MultiplierRigidbody;
-    public static float Speed = 12f;
+    public static float Speed = 15f;
     public static bool hitMultiplier = false;
 
     public Coin CoinInstance;
