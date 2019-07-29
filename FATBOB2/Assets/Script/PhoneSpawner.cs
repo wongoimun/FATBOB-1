@@ -17,7 +17,7 @@ public class PhoneSpawner : MonoBehaviour
     {
         while (ShouldSpawn)
         {
-            if((int)Time.time % Spawner.WaitTime != 0 && (int)Time.time % Spawner.WaitTime != 1)
+            if((int)Time.timeSinceLevelLoad % Spawner.WaitTime != 0 && (int)Time.timeSinceLevelLoad % Spawner.WaitTime != 1)
             {
                 //Debug.Log(Time.time);
                 Instantiate(AngryPhoneObstacle, transform.position, Quaternion.identity);
