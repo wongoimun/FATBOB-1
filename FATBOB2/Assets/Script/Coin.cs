@@ -31,6 +31,7 @@ public class Coin : MonoBehaviour
         {
             DoublePickedup = false;
         }
+        //Debug.Log(DoublePickedup);
     }
     
     public void DoublePickedUp()
@@ -51,6 +52,7 @@ public class Coin : MonoBehaviour
         if (other.gameObject.name == "Bob" && DoublePickedup)
         {
             score += 2;
+            //Debug.Log("double");
             Destroy(gameObject);
         }
 
