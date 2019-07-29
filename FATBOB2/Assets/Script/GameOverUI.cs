@@ -17,7 +17,7 @@ public class GameOverUI : MonoBehaviour
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameM.Restart();
-        SceneManager.LoadScene("backup18");
+        SceneManager.LoadScene("backup19 (use this)");
         
     }
 }

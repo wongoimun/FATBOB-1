@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public float restartDelay = 100f;
 
+    private int numvariable;
+
     [SerializeField]
     private GameObject gameOverUI;
 
@@ -162,12 +164,19 @@ public class GameManager : MonoBehaviour
         PiSpawner.ShouldSpawn = true;
 
         myStamina.STAMINALOSS = 2f;
-        //background.scroll_speed = 0;
-       // animator.SetBool("Dead", true);
+
+        Multiplier.Speed = 10f;
+        MSpawner.ShouldSpawn = true;
+
+        SuperStrength.Speed = 10f;
+        SSpawner.ShouldSpawn = true;
+
+        Coin.score = 0;
+        // animator.SetBool("Dead", true);
 
     }
 
-    
+
 
 
 }
