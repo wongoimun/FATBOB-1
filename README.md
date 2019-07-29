@@ -85,8 +85,8 @@ Pending super-
 Strength
 powerup 
 23/06/19 - 30/06/19
-Testruns
-Ensure our game runs
+Testruns 
+Ensure our game runs 
 
 Improve our game wherever necessary
 
@@ -100,16 +100,16 @@ Leftover milestone 2 features to finish
 
 
 Features to be completed
-Highest score, total coins throughout
-Powerups - Super strength
- UI - game title, storyline scenes, pause, menu, death scene, retry
+Highest score, total coins throughout ✔
+Powerups - Super strength ✔
+ UI - game title, storyline scenes, menu, death scene, retry ✔
 
 
 
 13/07/19 - 20/07/19
 Other features to consider
 More coins over/ under obstacles
-As more time passes, speed/ frequency of obstacles increases
+As more time passes, speed/ frequency of obstacles increases ✔
 Levelised - run away from sch, run away from work, run in gym
 
 
