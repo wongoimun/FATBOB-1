@@ -5,7 +5,7 @@ using UnityEngine;
 public class Doughnut : MonoBehaviour
 {
     private Rigidbody2D DoughnutRigidbody;
-    public static float Speed = 10f;
+    public static float Speed = 12f;
     public static bool hitDoughnut = false;
 
     private void Start()

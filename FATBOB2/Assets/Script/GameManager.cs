@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public static float pickedTiming = 999999999999;
     public static float endTiming = 999999999999;
 
+    public static float CurrScore = 0;
+    public static float CurrInt = 0;
+
     public Animator animator;
     public StaminaSystem myStamina;
     public BGScroll background;
@@ -59,6 +62,15 @@ public class GameManager : MonoBehaviour
             Normal();
             //Debug.Log("Strength ended");
         }
+
+        //code to increase the speed of BOB every time the score is a multiple of 30
+        float Integer = Coin.score / 30;
+        if (Integer != CurrInt && Coin.score != CurrScore)
+        {
+            CurrScore = Coin.score;
+            CurrInt = Integer;
+            SpeedIncrease();
+        }
     }
 
     public static void Strength()
@@ -70,30 +82,43 @@ public class GameManager : MonoBehaviour
         Speedup();
     }
 
+    public static void SpeedIncrease()
+    {
+        EvilPaperObstacle.Speed++;
+        AngryPhoneObstacle.Speed++;
+        Coin.Speed++;
+        BubbleTea.Speed++;
+        Doughnut.Speed++;
+        Pizza.Speed++;
+        Multiplier.Speed++;
+        SuperStrength.Speed++;
+        Debug.Log("speed increase");
+    }
+
     public static void Speedup()
     {
-        EvilPaperObstacle.Speed = 15;
-        AngryPhoneObstacle.Speed = 15;
-        Coin.Speed = 15;
-        BubbleTea.Speed = 15;
-        Doughnut.Speed = 15;
-        Pizza.Speed = 15;
-        Multiplier.Speed = 15;
-        SuperStrength.Speed = 15;
+        EvilPaperObstacle.Speed += 5;
+        AngryPhoneObstacle.Speed += 5;
+        Coin.Speed += 5;
+        BubbleTea.Speed += 5;
+        Doughnut.Speed += 5;
+        Pizza.Speed += 5;
+        Multiplier.Speed += 5;
+        SuperStrength.Speed += 5;
         Debug.Log("speed up");
     }
 
     public void Normal()
     {
-        EvilPaperObstacle.Speed = 10;
-        AngryPhoneObstacle.Speed = 10;
-        Coin.Speed = 10;
-        BubbleTea.Speed = 10;
-        Doughnut.Speed = 10;
-        Pizza.Speed = 10;
-        Multiplier.Speed = 10;
-        SuperStrength.Speed = 10;
-        Debug.Log("10");
+        EvilPaperObstacle.Speed -= 5;
+        AngryPhoneObstacle.Speed -= 5;
+        Coin.Speed -= 5;
+        BubbleTea.Speed -= 5;
+        Doughnut.Speed -= 5;
+        Pizza.Speed -= 5;
+        Multiplier.Speed -= 5;
+        SuperStrength.Speed -= 5;
+        Debug.Log("normal");
     }
 
     public void OnPlayerHit()
@@ -175,8 +200,5 @@ public class GameManager : MonoBehaviour
         // animator.SetBool("Dead", true);
 
     }
-
-
-
-
+    
 }

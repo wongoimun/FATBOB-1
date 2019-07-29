@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     private Rigidbody2D coinRigidbody;
-    public static float Speed = 10f;
+    public static float Speed = 12f;
     public static int score = 0;
 
     public bool DoublePickedup;

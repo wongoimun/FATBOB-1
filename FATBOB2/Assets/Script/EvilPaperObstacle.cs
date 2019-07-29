@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EvilPaperObstacle : MonoBehaviour
 {
-    public static float Speed = 10f;
+    public static float Speed = 12f;
     private Rigidbody2D paperRigidbody;
     private void Start()
     {

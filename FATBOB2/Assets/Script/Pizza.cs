@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pizza : MonoBehaviour
 {
     private Rigidbody2D PizzaRigidbody;
-    public static float Speed = 10f;
+    public static float Speed = 12f;
     public static bool hitPizza = false;
 
     private void Start()
