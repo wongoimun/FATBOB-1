@@ -170,30 +170,30 @@ public class GameManager : MonoBehaviour
 
    public void Restart()
     {
-        EvilPaperObstacle.Speed = 10f;
+        EvilPaperObstacle.Speed = 15f;
         Spawner.ShouldSpawn = true;
 
-        AngryPhoneObstacle.Speed = 10f;
+        AngryPhoneObstacle.Speed = 15f;
         PSpawner.ShouldSpawn = true;
 
-        Coin.Speed = 10f;
+        Coin.Speed = 15f;
         CSpawner.ShouldSpawn = true;
 
-        BubbleTea.Speed = 10f;
+        BubbleTea.Speed = 15f;
         BSpawner.ShouldSpawn = true;
 
-        Doughnut.Speed = 10f;
+        Doughnut.Speed = 15f;
         DSpawner.ShouldSpawn = true;
 
-        Pizza.Speed = 10f;
+        Pizza.Speed = 15f;
         PiSpawner.ShouldSpawn = true;
 
         myStamina.STAMINALOSS = 2f;
 
-        Multiplier.Speed = 10f;
+        Multiplier.Speed = 15f;
         MSpawner.ShouldSpawn = true;
 
-        SuperStrength.Speed = 10f;
+        SuperStrength.Speed = 15f;
         SSpawner.ShouldSpawn = true;
 
         Coin.score = 0;
