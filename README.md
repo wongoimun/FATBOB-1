@@ -1,7 +1,7 @@
 # FATBOB
 Link to game: https://wongoimun.github.io/FATBOB-1/
 
-A game made for Orbital 2019 
+A game made for Orbital 2019 (By Celesse Tay Yi Qi, Wong Oi Mun)
 
 Proposed level of achievement: 
 Project Gemini 
