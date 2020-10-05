@@ -1,6 +1,6 @@
-# Link to game: https://wongoimun.github.io/FATBOB-1/
-
 # FATBOB
+Link to game: https://wongoimun.github.io/FATBOB-1/
+
 A game made for Orbital 2019 
 
 Proposed level of achievement: 
